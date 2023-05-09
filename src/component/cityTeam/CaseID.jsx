@@ -8,6 +8,9 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { FormContext } from "../../store/formsData/formDataContext";
 
+
+
+
 const CaseID = () => {
   const navigate = useNavigate();
   const { submittedData } = useContext(FormContext);
@@ -39,6 +42,8 @@ const CaseID = () => {
       field: "first_name",
       headerName: "First Name(as per ID)",
     },
+
+    
     {
       field: "middle_name",
       headerName: "Middle Name(as per ID)",
